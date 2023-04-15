@@ -21,3 +21,6 @@ Se necesitan ciertos requerimientos (librerías) para que la aplicación web fun
 pip install opencv-python==4.5.3.56 numpy==1.19.5 mediapipe==0.8.7.1 flask==2.0.2 flask-socketio==5.1.1
 </code></pre>
 
+## Más información
+
+Abre el archivo de la presentación de PP, para poder visualizar más información del grupo, así como de las señas que la IA es capaz de traducir.
