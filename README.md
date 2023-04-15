@@ -1,1 +1,3 @@
-# AT-LESHO-ProyectoIA-
+# AT-LESHO-ProyectoIA
+
+## ¿De qué se trata AT-LESHO?
