@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Traductor LESHO</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Course Project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/dist/css/styles/bootstrap4/bootstrap.min.css">
+	<link href="../static/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="../static/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="../static/dist/css/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/dist/css/styles/responsive.css">
+	<link rel="icon" href="../static/images/logo.svg" type="image/x-icon">
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			background-color: #f2f2f2;
+		}
+		
+		#main-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			width: 80%;
+			height: 80vh;
+			margin-top: 20px;
+		}
+		
+		#video-container {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			margin-right: 20px;
+			border: 2px solid #2196F3;
+		}
+		
+		#video {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		
+		#output-container {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			border: 2px solid #2196F3;
+			padding: 10px;
+			text-align: center;
+			overflow: auto;
+		}
+		
+		h1 {
+			text-align: center;
+		}
+		
+		button {
+			background-color: #2196F3;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 10px;
+			cursor: pointer;
+			border-radius: 4px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		@media (max-width: 768px) {
+			#main-container {
+				flex-direction: column;
+				align-items: center;
+			}
+		
+			#video-container {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		
+			#output-container {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		</style>
+</head>
+
+<body>
+    <header class="header d-flex flex-row">
+
+			<div class="header_content d-flex flex-row align-items-center">
+
+				<div class="logo_container">
+					<div class="logo">
+						<img src="../static/images/logo.svg" width="17%" height="17%"  alt="">
+						<span> LESHO</span>
+					</div>
+				</div>
+
+
+				<nav class="main_nav_container">
+					<div class="main_nav">
+						<ul class="main_nav_list">
+							<li class="main_nav_item"><a href="index.html">Inicio</a></li>
+				
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="header_side d-flex flex-row justify-content-center align-items-center">
+				<img src="../static/images/phone-call.svg" alt="">
+				<span>+504 98681827</span>
+			</div>
+
+
+
+
+			<div class="hamburger_container">
+				<i class="fas fa-bars trans_200"></i>
+			</div>
+
+		</header>
+
+		<div class="Inicio">
+
+
+			<div class="hero_slider_container">
+				<div class="hero_slider owl-carousel">
+
+
+					<div class="hero_slide">
+						<div class="hero_slide_background" style="background-image:url(../static/images/lenguaje1.jpg)"></div>
+						<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+							<div class="hero_slide_content text-center">
+								<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"> <span>Bienvenido a LESHO!</span> </h1>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="hero_slide">
+						<div class="hero_slide_background" style="background-image:url(../static/images/lenguaje2.jpg)"></div>
+						<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+							<div class="hero_slide_content text-center">
+								<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">¡El mejor traductor <span>comunicate ya!</span></h1>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="hero_slide">
+						<div class="hero_slide_background" style="background-image:url(../static/images/lenguaje3.jpg)"></div>
+						<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+							<div class="hero_slide_content text-center">
+								<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Vive una experiencia <span> TOTALMENTE VIRTUAL</span></h1>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
+				<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div>
+			</div>
+
+		</div>
+
+		<div class="register">
+
+			<div class="container-fluid">
+
+				<div class="row row-eq-height">
+					<div class="col-lg-6 nopadding">
+
+
+
+						<div class="register_section d-flex flex-column align-items-center justify-content-center">
+							<div class="register_content text-center">
+									<img id="video" src="{{ url_for('video_feed') }}">
+									<button id="toggle-cam-btn" onclick="toggleVideo()">Desactivar Cámara</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 nopadding">
+
+
+
+						<div class="search_section d-flex flex-column align-items-center justify-content-right">
+							<div class="search_background" style="background-image:url(../static/images/search_background.jpg);"></div>
+							<div class="search_content text-center">
+								<h1 class="search_title">Texto interpretado</h1>
+								<div style="background-color: #F5F5F5; width: 500px; height: 500px;">
+									<div id="console">
+										<textarea id="mi-parrafo" readonly style="font-size: 30; color: black; font-weight: bold; width: 500px; height: 500px;"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+
+
+
+				<div class="newsletter">
+					<div class="row">
+						<div class="col">
+							<div class="section_title text-center">
+								<h1>Subscribete a LESHO </h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col text-center">
+							<div class="newsletter_form_container mx-auto">
+								<form action="post">
+									<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+										<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Suscribirme</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="footer_content">
+					<div class="row">
+
+
+						<div class="col-lg-3 footer_col">
+
+
+							<div class="logo_container">
+								<div class="logo">
+									<img src="../static/images/logo.svg" width="65%" height="65%" alt="">
+									<span>LESHO</span>
+								</div>
+							</div>
+
+							<p class="footer_about_text">En LESHO fomentamos la innovacion.</p>
+
+						</div>
+
+
+
+						<div class="col-lg-3 footer_col">
+							<div class="footer_column_title">Menu</div>
+							<div class="footer_column_content">
+								<ul>
+									<li class="footer_list_item"><a href="index.html">Inicio</a></li>
+									<li class="footer_list_item"><a href="#">Acerca de</a></li>
+									<li class="footer_list_item"><a href="#">Cursos</a></li>
+									<li class="footer_list_item"><a href="#">Contactactanos</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-3 footer_col">
+							<div class="footer_column_title">Links de ayuda</div>
+							<div class="footer_column_content">
+								<ul>
+									<li class="footer_list_item"><a href="#">Testimonios</a></li>
+									<li class="footer_list_item"><a href="#">FAQ</a></li>
+									<li class="footer_list_item"><a href="#">Comunidad</a></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-3 footer_col">
+							<div class="footer_column_title">Contactactos</div>
+							
+							<div class="footer_column_content">
+								<ul>
+									<li class="footer_contact_item">
+										<div class="footer_contact_icon">
+											<img src="../static/images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										</div>
+										Juticalpa, Olancho Blv. Los Poetas
+									</li>
+									<li class="footer_contact_item">
+										<div class="footer_contact_icon">
+											<img src="../static/images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										</div>
+										98681827 / 99265342
+									</li>
+									<li class="footer_contact_item">
+										<div class="footer_contact_icon">
+											<img src="../static/images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										</div>traductorlesho@hotmail.hn
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+					<div class="footer_copyright">
+						<span>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> Todos los derechos reservados LESHO S.A. de C.V. © 2018 / www.LESHO.hn <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">LESHO</a>
+
+					</div>
+					<div class="footer_social ml-sm-auto">
+						<ul class="menu_social">
+							<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+							<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script id=1 src="../static/js/jquery-3.2.1.min.js"></script>
+	<script src="../static/dist/css/styles/bootstrap4/popper.js"></script>
+	<script src="../static/dist/css/styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="../static/plugins/greensock/TweenMax.min.js"></script>
+	<script src="../static/plugins/greensock/TimelineMax.min.js"></script>
+	<script src="../static/plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="../static/plugins/greensock/animation.gsap.min.js"></script>
+	<script src="../static/plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="../static/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="../static/plugins/scrollTo/jquery.scrollTo.min.js"></script>
+	<script src="../static/plugins/easing/easing.js"></script>
+	<script src="../static/js/custom.js"></script>
+	<script>
+		var video = document.getElementById("video");
+  
+		function toggleVideo() {
+		  if (video.style.display === "none") {
+			video.style.display = "block";
+			var button = document.getElementById("toggle-cam-btn");
+			button.innerHTML = "Desactivar Camara";
+		  } else {
+			video.style.display = "none";
+			alert("El video ha sido desactivado.");
+			var button = document.getElementById("toggle-cam-btn");
+			button.innerHTML = "Activar Camara";
+		  }
+		}
+
+		//AQUI
+		var texto_anterior = ''
+		function actualizarParrafo() {
+		// obtener el elemento <p> por su ID
+		var parrafo = document.getElementById('mi-parrafo');
+		// hacer una solicitud AJAX a la ruta /actualizar_parrafo
+		fetch('/actualizar_parrafo')
+			.then(function(response) {
+			return response.text();
+			})
+			.then(function(texto) {
+			// actualizar el contenido del elemento <p>
+			if(texto != texto_anterior && texto != ''){
+				texto_anterior = texto;
+				parrafo.innerHTML += ' ' + texto;
+			}
+			});
+		}
+		// hacer que la función actualizarParrafo() se ejecute cada segundo
+		setInterval(actualizarParrafo, 200);
+		//AQUI AQUI AQUI AQUI
+
+  
+  
+		var socket = io.connect('http://' + document.domain + ':' + location.port);
+  
+		  // Función para capturar la salida de la consola
+		  function captureConsoleLog() {
+			  var oldLog = console.log;
+  
+			  console.log = function (message) {
+				  socket.emit('console', message);
+				  oldLog.apply(console, arguments);
+			  };
+		  }
+  
+		  captureConsoleLog();
+  
+		  // Función para mostrar los datos de la consola en el cuadro de texto
+		  socket.on('console', function (data) {
+	  var consoleText = document.getElementById('console');
+	  consoleText.innerHTML += data + '<br>'; // aquí se agrega el contenido al final del div
+	  console.log(data); // también se puede imprimir en la consola del navegador para verificar
+  });
+	  </script>
+
+
+</body>
+
+</html>
