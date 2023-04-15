@@ -58,7 +58,6 @@ def gen_frames():
                     else:
                         dedos.append(0)
 
-                TotalDedos = dedos.count(1)
                 dedos, nuevo_contenido2 = condicionalesLetras(dedos)
 
                 global nuevo_contenido

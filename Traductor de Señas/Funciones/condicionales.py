@@ -11,8 +11,8 @@ def condicionalesLetras(dedos):
     elif dedos == [1, 0, 1, 0, 0, 0]:
             nuevo_contenido = 'O'
 
-    elif dedos == [0, 0, 1, 0, 0, 1]:
-            nuevo_contenido = 'U'
+    #elif dedos == [0, 0, 1, 0, 0, 1]:
+     #       nuevo_contenido = 'U'
     # abecedario
         # if dedos ==[1,0,1,0,0,0]:
         #     cv2.rectangle(frame,(0,0),(100,100),(255,255,255), -1)
@@ -26,8 +26,8 @@ def condicionalesLetras(dedos):
             nuevo_contenido = 'L'
     elif dedos == [0, 1, 0, 1, 1, 1]:
             nuevo_contenido = 'W'
-    elif dedos == [0, 1, 0, 0, 1, 1]:
-            nuevo_contenido = 'N'
+    #elif dedos == [0, 1, 0, 0, 1, 1]:
+#       nuevo_contenido = 'N'
     elif dedos == [1, 1, 1, 0, 0, 0]:
             nuevo_contenido = 'Y'
     elif dedos == [1, 1, 1, 1, 1, 0]:
